@@ -22,4 +22,5 @@ interface IUsbExt {
   oneway void setPortSecurityState(String portName, android.hardware.usb.ext.PortSecurityState state);
   const int ERROR_NO_I2C_PATH = 1;
   const int ERROR_FILE_WRITE = 2;
+  const int ERROR_DENY_NEW_USB_WRITE = 3;
 }
