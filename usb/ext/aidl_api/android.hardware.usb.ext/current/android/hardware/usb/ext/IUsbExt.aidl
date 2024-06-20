@@ -19,7 +19,8 @@
 package android.hardware.usb.ext;
 @VintfStability
 interface IUsbExt {
-  oneway void setPortSecurityState(String portName, android.hardware.usb.ext.PortSecurityState state);
+  oneway void setPortSecurityState(String portName, android.hardware.usb.ext.PortSecurityState state, android.hardware.usb.ext.IPortSecurityStateCallback callback);
+  const int NO_ERROR = 0;
   const int ERROR_NO_I2C_PATH = 1;
   const int ERROR_FILE_WRITE = 2;
   const int ERROR_DENY_NEW_USB_WRITE = 3;
